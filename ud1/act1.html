@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividad 1</title>
         <h1>Diseño de interfaces web</h1>
                 <h2>Unidad 1</h2>
+
+<style>
+  * {
+        box-sizing: border-box;
+        }
+
+        p {
+                font-size: 18px;
+                margin: 10px;
+        }
+
+        b {
+                font-size: 20px;
+                margin: 10px;
+                text-align: center;
+        }
+
+        .cols {
+                
+        }
+        .col1 {
+                background-color: rgb(243, 204, 130);
+                width: 49%;
+        }
+        .col2 {
+                background-color: rgb(255, 181, 43);
+                width: 49%;
+        }
+        .col1,
+        .col2 {
+                display: inline-block;
+                height: 700px;
+                margin: 3px;
+        }
+
+</style>
 </head>
 
 
@@ -15,13 +51,27 @@
 
 <a href="act2.html"><button>Actividad 2</button></a>
 
-<a><button>Actividad 3</button></a>
+<a href="act3.html"><button>Actividad 3</button></a>
 
         <h3>Actividad 1</h3>
-    
 
-        <iframe src="https://web.archive.org/web/20050829183411/http://terra.com/" width="48%" height="780px"></iframe>
+<div class="cols">
+<div class="col1">
+        <iframe src="https://web.archive.org/web/20050829183411/http://terra.com/" width="100%" height="500px"></iframe>
+        <b>La página web de Terra en 2005.</b>
+        <p>La interfaz es compleja y llena de enlaces por todas partes. Si bien los colores ayudan a localizar los diferentes contenidos, el menú principal está en la parte superior, pero hay muchos otros menús en la parte izquierda, derecha e inferior de la página.  </p>
+        <p> </p>
+        <p>Al ser una página del 2005, se nota que está oriantada a navegar por ella en un navegador web, tal vez por eso la letra es tan pequeña </p>
+</div>
+<div class="col2">
+        <iframe src="https://www.terra.com/" width="100%" height="500px"></iframe>
+        <b>La página web de Terra en 2025.</b>
+        <p>Actualmente la web de Terra está mucho más simplificada, ha mantenido los colores originales, pero ahora podemos apreciar una página principal mucho más legible, las noticias están mejor delimitadas, mostrando las más destacadas/recientes en primer lugar, y mostrando el contenido conforme bajas por la página. </p>
+        </p>
+        <p>Los menús que anteriormente llenaban casa rincón, ahora se encuentran ocultos en un menú emergente, y los más utilizados se encuentran en el encabezado de la web, lo que ayuda a la navegación en móvil</p>
+</div>
+</div>
 
-        <iframe src="https://www.terra.com/" width="48%" height="780px"></iframe>
+
 </body>
 </html>
