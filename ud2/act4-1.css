@@ -1,0 +1,66 @@
+
+/*-Parte 2--------------------------------------------------------------------------------------------*/
+.contenedor{
+    background-color: rgb(247, 0, 0);
+    width: 100%;
+    height: auto;
+}
+
+.azul{
+    background-color: rgb(47, 161, 226);
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    margin:1vw;
+}
+
+.morado{
+    background-color: rgb(160, 116, 218);
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    margin:1vw;
+    
+}
+
+.rojo{
+    background-color: rgb(223, 87, 87);
+    width: 30vw;
+    height: 40vw;
+    float:right;
+    margin:1vw;
+}
+
+.amarillo{
+        background-color: rgb(227, 255, 101);
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    margin:1vw;
+    clear: right;
+    
+}
+.verde{
+        background-color: rgb(71, 241, 148);
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    margin:1vw;
+}
+
+.naranja{
+    background-color: rgb(247, 164, 69);
+    width: 30vw;
+    height: 20vw;
+    float: right;
+    margin:1vw; 
+}
+
+.rosa{
+    background-color: rgb(243, 162, 223);
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    margin:1vw;
+    clear: both;
+}
