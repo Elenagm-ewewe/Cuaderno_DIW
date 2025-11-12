@@ -78,7 +78,26 @@
             transition: background-color 0.3s;
         }
 
-        /* Efecto hover en los enlaces de actividad */
-        .submenu-link:hover {
-            background-color: #057d8d;/* Un color de acento azul */
-        }
+
+.submenu-link:hover {
+    background-color: #057d8d;
+}
+
+
+.descripcion-item{
+    background-color: #444;
+    margin-left: auto;
+    margin-right: 5em;
+}
+
+.descripcion-content {
+    padding: 15px; 
+    max-width: 250px; 
+    white-space: normal;
+    text-align: left;
+}
+
+.descripcion-content p {
+    margin: 0;
+    color: white;
+}

@@ -11,7 +11,7 @@ body{
     top: 0;
     left: 0;
     z-index: 0;
-    position: absolute;
+    position: relative;
 }
 
 .div_blanco{
