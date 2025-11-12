@@ -1,0 +1,391 @@
+/* EJERCICIO 1 */
+#PrimerPárrafo {
+    border-top: 1px solid black;
+}
+#SegundoPárrafo {
+    border-bottom: 1px solid black;
+}
+
+/* EJERCICIO 2 */
+.PrimeraLista li:nth-child(odd) {
+    text-decoration: line-through;
+}
+.PrimeraLista li:nth-child(even) {
+    text-decoration: underline;
+}
+.SegundaLista li:nth-child(4n) {
+    color:green;
+}
+
+/* EJERCICIO 3 */
+p strong:first-of-type{
+    color:crimson;
+}
+
+/* EJERCICIO 4 */
+.tabla1 tr:first-child {
+    background-color: yellow;
+}
+
+/* EJERCICIO 5 */
+td:empty {
+    background-color: yellow;
+}
+
+/* EJERCICIO 6 */
+.ListaEjercicio6 li::first-letter {
+    text-decoration: underline;
+}
+
+/* EJERCICIO 7 */ 
+.Ejercicio7 p::before {
+    content: "- ";
+}
+
+/* EJERCICIO 8 */ 
+.Ejercicio8 ol li {
+    color:darkblue;
+}
+.Ejercicio8 ul li {
+    color:cyan;
+}
+
+/* EJERCICIO 9 */
+.Ejercicio9 p:first-of-type {
+    text-indent: 3em;
+}
+
+/* EJERCICIO 10 */
+#h1Ejercicio10 {
+    font-size: 40px;
+    font-family: Arial;
+}
+#h2Ejercicio10 {
+    font-size: 30px;
+    font-family: "Arial Black";
+}
+h3 {
+    font-size: 25px;
+    font-family: "Arial Narrow"
+}
+h4 {
+    font-size: 20px;
+}
+h5{
+    font-size: 15px;
+}
+h6{
+    font-size: 10;
+}
+
+/* EJERCICIO 11 */ 
+.ejercicio11 p {
+    color: green;
+    text-align: center;
+}
+.ejercicio11 p:last-of-type {
+    color:darkred;
+    text-align: center;
+}
+
+/* EJERCICIO 12 */
+.ejercicio12 h1 {
+    letter-spacing: 2em;  
+    word-spacing: 3em;   
+    text-transform: uppercase;
+}
+
+.ejercicio12 h2 {
+    letter-spacing: 1.5em;  
+    word-spacing: 2em;    
+    text-transform: uppercase;
+}
+
+.ejercicio12 h3 {
+    letter-spacing: 1em; 
+    word-spacing: 1em;
+    text-transform: uppercase;
+}
+
+/* EJERCICIO 13 */
+.ejercicio13 a {
+    font-size: 1em;
+}
+.ejercicio13 a:hover {
+    font-size: 2em;     
+    background-color: yellow; 
+}
+
+/* EJERCICIO 14 */
+#enlace2 a {
+    text-decoration: line-through; 
+}
+
+/* EJERCICIO 15 */
+.ejercicio15 p {
+    margin: 0;
+}
+.ejercicio15 p:nth-child(1)  { background-color: #000; color: white; }
+.ejercicio15 p:nth-child(2)  { background-color: #111; color: white; }
+.ejercicio15 p:nth-child(3)  { background-color: #222; color: white; }
+.ejercicio15 p:nth-child(4)  { background-color: #333; color: white; }
+.ejercicio15 p:nth-child(5)  { background-color: #444; color: white; }
+.ejercicio15 p:nth-child(6)  { background-color: #555; color: white; }
+.ejercicio15 p:nth-child(7)  { background-color: #666; color: white; }
+.ejercicio15 p:nth-child(8)  { background-color: #777; color: white; }
+.ejercicio15 p:nth-child(9)  { background-color: #888; color: black; }
+.ejercicio15 p:nth-child(10) { background-color: #999; color: black; }
+.ejercicio15 p:nth-child(11) { background-color: #aaa; color: black; }
+.ejercicio15 p:nth-child(12) { background-color: #bbb; color: black; }
+.ejercicio15 p:nth-child(13) { background-color: #ccc; color: black; }
+.ejercicio15 p:nth-child(14) { background-color: #ddd; color: black; }
+.ejercicio15 p:nth-child(15) { background-color: #eee; color: black; }
+.ejercicio15 p:nth-child(16) { background-color: #fff; color: black; }
+
+/* EJERCICIO 16 */ 
+.tablaEjercicio16 tbody th,
+.tablaEjercicio16 tbody td {
+    border: 0.1em solid black; 
+}
+
+/* EJERCICIO 17 */
+.contenedor {
+    display: flex;         
+    gap: 10px;             
+}
+
+.bloque1 {
+    flex: 50%;         
+    background-color:lightblue;
+}
+
+.bloque2 {
+    flex: 30%;         
+    background-color: lightgreen;
+}
+
+.bloque3 {
+    flex: 20%;       
+    background-color: lightcoral;
+}
+
+/* EJERCICIO 18 */
+.cuadricula {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 1em;         
+}
+
+.item {
+    width: 30%;       
+    border: 0.05em solid gray;
+    padding: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* EJERCICIO 19 */
+.ejercicio19 p {
+    text-indent: 2em;   
+    line-height: 1.8;   
+    text-align: justify; 
+}
+
+/* EJERCICIO 20 */
+#titulo1 {
+    text-transform: uppercase; 
+    background-color: lightblue;
+}
+
+#titulo2 {
+    text-transform: lowercase;   
+    background-color: lightgreen;
+}
+
+#titulo3 {
+    text-transform: capitalize; 
+    background-color: lightcoral;
+}
+
+/* EJERCICIO 21 */
+.tarjeta {
+    border-radius: 15px;
+    box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.2);
+    background-image: repeating-linear-gradient(45deg, #555 0 0.25em, #333 0 0.5em);
+    padding: 1.5em; 
+    max-width: 20em;
+}
+.tarjeta h2,
+.tarjeta p {
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+/* EJERCICIO 22 */
+.cuadro {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    font-size: 2em;           
+}
+
+/* EJERCICIO 23 */
+.horario-semanal table {
+    text-align: center;
+}
+
+.horario-semanal th,
+.horario-semanal td {
+    border: 1px solid black;
+}
+
+.horario-semanal .lunes { background-color: lightblue; }
+.horario-semanal .martes { background-color: lightcoral; }
+.horario-semanal .miercoles { background-color: lightgoldenrodyellow; }
+.horario-semanal .jueves { background-color: lightgreen; }
+.horario-semanal .viernes { background-color: lightseagreen; }
+
+.horario-semanal .destacada {
+    background-color: darkorange;
+}
+
+.horario-semanal .recreo {
+    background-color: lightgray;
+}
+
+.horario-semanal .resumen {
+    background-color: deeppink;
+}
+
+/* EJERCICIO 24 */
+.textoPares span:nth-child(even) {
+    color: blue;
+    font-weight: bold;
+}
+
+/* EJERCICIO 25 */
+.botonTransicion {
+    background-color: gray;     
+    transition: background-color 0.5s;
+}
+
+.botonTransicion:hover {
+    background-color: blue;   
+}
+
+.botonTransicion:active {
+    background-color: green;     
+}
+
+/* EJERCICIO 26 */
+.nivel1 {
+    list-style-type: upper-roman;
+    color: darkblue;
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+.nivel2 {
+    list-style-type: lower-alpha;
+    color: darkgreen;
+    font-size: 1em;
+    margin-left: 1em;
+}
+.nivel3 {
+    list-style-type: square;
+    color: darkred;
+    font-size: 0.5em;
+    margin-left: 0.5em;
+}
+
+/* EJERCICIO 27 */
+.enlaces a:link {
+    color: blue;
+    text-decoration: underline;
+}
+.enlaces a:visited {
+    color: purple;
+    text-decoration: none;
+}
+.enlaces a:hover {
+    background-color: yellow;
+    color: black;
+}
+.enlaces a:active {
+    color: red;
+}
+
+/* EJERCICIO 28 */
+.tablaColores {
+    width: 100%;              
+    text-align: center;      
+}
+.tablaColores thead {
+    background-color: lightblue;
+}
+
+/* EJERCICIO 29 */
+.menu {
+    max-width: 800px;        
+    margin: 0 auto;         
+    background-color: #333;   
+}
+
+.menu ul {
+    list-style: none;  
+    display: flex;         
+    justify-content: center;  
+}
+
+.menu ul li {
+    margin: 1rem;   
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 0.5rem;         
+    color: #f0f0f0;       
+    text-decoration: none;
+    font-size: 1rem;        
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu ul li a:hover {
+    color: yellow;
+}
+
+.menu ul li a.activo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* EJERCICIO 30 */ 
+.formulario {
+    max-width: 30rem;       
+    margin: 0 auto;         
+    gap: 1rem;       
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;          
+    padding: 0.5em;      
+    background-color: #f9f9f9;
+    color: #333;              
+    border: 1px solid #ccc;  
+}
+
+.formulario input:hover,
+.formulario input:focus,
+.formulario textarea:hover,
+.formulario textarea:focus {
+    border-color: #007BFF;
+}
+
+.formulario button {
+    background-color: #2e00fd; 
+    color: white;              
+    align-self: center;      
+}
