@@ -5,102 +5,114 @@
 <link rel="stylesheet" href="../header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <style>
   * {
         box-sizing: border-box;
-        }
+  }
 
-        p {
-                font-size: 18px;
-                margin: 10px;
-        }
+  p {
+        font-size: 18px;
+        margin: 10px;
+  }
 
-        b {
-                font-size: 20px;
-                margin: 10px;
-                text-align: center;
-        }
+  b {
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+  }
 
-        .col1 {
-                background-color: rgb(243, 204, 130);
-                width: 49%;
-        }
-        .col2 {
-                background-color: rgb(255, 181, 43);
-                width: 49%;
-        }
-        .col1,
-        .col2 {
-                display: inline-block;
-                height: 700px;
-                margin: 3px;
-        }
+  .col1 {
+        background-color: rgb(243, 204, 130);
+        width: 49%;
+  }
+
+  .col2 {
+        background-color: rgb(255, 181, 43);
+        width: 49%;
+  }
+
+  .col1,
+  .col2 {
+        display: inline-block;
+        vertical-align: top; 
+        margin: 3px;
+  }
 
 </style>
 </head>
 
-
 <body>
-        <header class="header">
-                <nav>
-                <ul class="menu-list">
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
 
-                        <h2>Diseño de interfaces web</h2>
+                <h2>Diseño de interfaces web</h2>
 
-                        <li class="menu-item">
-                        <a href="#" class="menu-link">Tema 1</a>
-                        <ul class="submenu-list">
-                                <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
-                                <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
-                                <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
-                                <li><a href="act4.html" class="submenu-link">Actividad 4</a></li>
-                                </ul>
-                        </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 1</a>
+                    <ul class="submenu-list">
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="act4.html" class="submenu-link">Actividad 4</a></li>
+                    </ul>
+                </li>
 
-                        <li class="menu-item">
-                        <a href="#" class="menu-link">Tema 2</a>
-                        <ul class="submenu-list">
-                                <li><a href="../ud2/act1.html" class="submenu-link">Actividad 1</a></li>
-                                <li><a href="../ud2/act2.html" class="submenu-link">Actividad 2</a></li>
-                                <li><a href="../ud2/act3.html" class="submenu-link">Actividad 3</a></li>
-                                <li><a href="../ud2/act4.html" class="submenu-link">Actividad 4.1</a></li>
-                                <li><a href="../ud2/act4-1.html" class="submenu-link">Actividad 4.2</a></li>
-                                <li><a href="../ud2/act5.html" class="submenu-link">Actividad 5</a></li>
-                        </ul>
-                        </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 2</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud2/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud2/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud2/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud2/act4.html" class="submenu-link">Actividad 4.1</a></li>
+                        <li><a href="../ud2/act4-1.html" class="submenu-link">Actividad 4.2</a></li>
+                        <li><a href="../ud2/act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="../ud2/act6.html" class="submenu-link">Actividad 6</a></li>
+                    </ul>
+                </li>
 
+                <li class="menu-item descripcion-item" id="descrip">
+                    <a href="#" class="menu-link">Descripción ▼</a>
+                    <div class="submenu-list descripcion-content"> 
+                        <p>
+                            Ingresa en https://web.archive.org/ busca la página web de una organización, empresa o medio de comunicación de tu elección. 
+                            Selecciona dos capturas de la misma web en fechas distintas (por ejemplo, con varios años de diferencia) y compáralas describiendo brevemente las diferencias en la interfaz, el diseño, la organización de los contenidos y los elementos visuales. 
+                            Reflexiona en pocas líneas sobre cómo esos cambios reflejan la evolución del diseño web y las necesidades de los usuarios.
+                        </p>
+                    </div>
+                </li>
 
-<li class="menu-item descripcion-item" id="descrip">
-        <a href="#" class="menu-link">Descripción ▼</a>
-        <div class="submenu-list descripcion-content"> 
-                <p>Ingresa en https://web.archive.org/ busca la página web de una organización, empresa o medio de comunicación de tu elección. Selecciona dos capturas de la misma web en fechas distintas (por ejemplo, con varios años de diferencia) y compáralas describiendo brevemente las diferencias en la interfaz, el diseño, la organización de los contenidos y los elementos visuales. Reflexiona en pocas líneas sobre cómo esos cambios reflejan la evolución del diseño web y las necesidades de los usuarios.</p>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>Actividad 1</h3>
+
+    <div class="cols">
+        <div class="col1">
+            <iframe src="https://web.archive.org/web/20050829183411/http://terra.com/" width="100%" height="500px"></iframe>
+            <b>La página web de Terra en 2005.</b>
+            <p>
+                La interfaz es compleja y llena de enlaces por todas partes. Si bien los colores ayudan a localizar los diferentes contenidos, 
+                el menú principal está en la parte superior, pero hay muchos otros menús en la parte izquierda, derecha e inferior de la página.  
+            </p>
+            <p>
+                Al ser una página del 2005, se nota que está orientada a navegar por ella en un navegador web, tal vez por eso la letra es tan pequeña.
+            </p>
         </div>
-</li>
 
-                </ul>
-                </nav>
-        </header>
-
-        <h3>Actividad 1</h3>
-
-<div class="cols">
-<div class="col1">
-        <iframe src="https://web.archive.org/web/20050829183411/http://terra.com/" width="100%" height="500px"></iframe>
-        <b>La página web de Terra en 2005.</b>
-        <p>La interfaz es compleja y llena de enlaces por todas partes. Si bien los colores ayudan a localizar los diferentes contenidos, el menú principal está en la parte superior, pero hay muchos otros menús en la parte izquierda, derecha e inferior de la página.  </p>
-        <p> </p>
-        <p>Al ser una página del 2005, se nota que está oriantada a navegar por ella en un navegador web, tal vez por eso la letra es tan pequeña </p>
-</div>
-<div class="col2">
-        <iframe src="https://www.terra.com/" width="100%" height="500px"></iframe>
-        <b>La página web de Terra en 2025.</b>
-        <p>Actualmente la web de Terra está mucho más simplificada, ha mantenido los colores originales, pero ahora podemos apreciar una página principal mucho más legible, las noticias están mejor delimitadas, mostrando las más destacadas/recientes en primer lugar, y mostrando el contenido conforme bajas por la página. </p>
-        </p>
-        <p>Los menús que anteriormente llenaban casa rincón, ahora se encuentran ocultos en un menú emergente, y los más utilizados se encuentran en el encabezado de la web, lo que ayuda a la navegación en móvil</p>
-</div>
-</div>
-
-
+        <div class="col2">
+            <iframe src="https://www.terra.com/" width="100%" height="500px"></iframe>
+            <b>La página web de Terra en 2025.</b>
+            <p>
+                Actualmente la web de Terra está mucho más simplificada, ha mantenido los colores originales, pero ahora podemos apreciar una página principal mucho más legible, 
+                las noticias están mejor delimitadas, mostrando las más destacadas/recientes en primer lugar, y mostrando el contenido conforme bajas por la página.
+            </p>
+            <p>
+                Los menús que anteriormente llenaban cada rincón, ahora se encuentran ocultos en un menú emergente, y los más utilizados se encuentran en el encabezado de la web, 
+                lo que ayuda a la navegación en móvil.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
