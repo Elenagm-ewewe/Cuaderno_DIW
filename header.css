@@ -1,8 +1,9 @@
 
         body {
+            margin: 0;
+            padding: 0 ;
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
         }
 
         h2{
@@ -90,4 +91,19 @@
 .descripcion-content p {
     margin: 0;
     color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+a h1{
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    margin-right: 1em;
+}
+
+a h1:hover{
+    color: #71afb8;
 }

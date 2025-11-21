@@ -13,7 +13,7 @@ body {
     margin: 3em auto;
     padding: 2em;
     background-color: #ffffff;
-    border-left: 0.3em solid #ff5a5f;
+    border-left: 0.3em solid #2a3886;
 }
 
 header {
@@ -64,4 +64,9 @@ button {
 
 button:hover {
     background-color: #f0e3cc;
+}
+
+a{
+    text-decoration: none;
+    color: #2e24bd;
 }
