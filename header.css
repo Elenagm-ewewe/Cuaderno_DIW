@@ -12,27 +12,23 @@
             margin-right: 2em;
         }
 
-        /* Estilo para el header/barra de navegación */
         .header {
             background-color: #057d8d;
             color: white;
             padding: 0 20px;
         }
 
-        /* Contenedor principal de la lista */
         .menu-list {
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex; /* Alinea los temas horizontalmente */
+            display: flex; 
         }
 
-        /* Elemento de lista (cada Tema) */
         .menu-item {
-            position: relative; /* Es crucial para posicionar el submenú */
+            position: relative;
         }
 
-        /* Estilo del enlace principal (Tema 1, Tema 2, etc.) */
         .menu-link {
             display: block;
             padding: 15px 20px;
@@ -41,35 +37,29 @@
             transition: background-color 0.3s;
         }
 
-        /* Efecto hover en los enlaces principales */
         .menu-link:hover {
             background-color: #ffffff;
             color: #333;
         }
 
-        /* --- Estilos para el Submenú Desplegable (Actividades) --- */
-
-        /* El submenú por defecto está oculto */
         .submenu-list {
             list-style: none;
             padding: 0;
             margin: 0;
-            position: absolute; /* Posiciona el submenú debajo del ítem principal */
-            top: 100%; /* Empieza justo debajo del enlace principal */
+            position: absolute; 
+            top: 100%; 
             left: 0;
-            background-color: #444; /* Color de fondo del desplegable */
-            min-width: 180px; /* Ancho mínimo para las actividades */
-            z-index: 10; /* Asegura que esté por encima del resto del contenido */
-            display: none; /* INICIALMENTE OCULTO */
+            background-color: #444; 
+            min-width: 180px; 
+            z-index: 10; 
+            display: none;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
-        /* Mostrar el submenú al pasar el ratón sobre el elemento de lista principal */
         .menu-item:hover .submenu-list {
             display: block;
         }
 
-        /* Estilo del enlace dentro del submenú (Actividad) */
         .submenu-link {
             display: block;
             padding: 10px 20px;
