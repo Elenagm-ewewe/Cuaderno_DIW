@@ -1,19 +1,28 @@
 body {
     background-color: #fffdf5;
-    background-image: linear-gradient(to bottom, #fffdf5 95%, #e6e6e6 100%);
-    background-size: 100% 2.5em; /*Líneas tipo cuaderno */
     color: #333;
     margin: 0;
     padding: 0;
+    background-image: url('/img/corchoCuaderno.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuaderno {
     width: 80%;
     max-width: 60em;
+    height: 80%;
     margin: 3em auto;
     padding: 2em;
     background-color: #ffffff;
     border-left: 0.3em solid #2a3886;
+    background-size: 100% 2.5em; /*Líneas tipo cuaderno */
+    background-image: linear-gradient(to bottom, #fffdf5 95%, #e6e6e6 100%);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.575);
 }
 
 header {
@@ -22,20 +31,26 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0.5em;
+    font-family: "Caveat Brush";
 }
 
 header h2 {
     font-size: 1.2em;
     color: #666;
     margin-top: 0;
+    font-family: "Caveat Brush";
+    font-weight: lighter;
 }
 
 .autores {
     font-style: italic;
     color: #555;
     margin-top: 0.5em;
+    font-family: "Caveat Brush";
+    font-weight: lighter;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -55,18 +70,27 @@ h3 {
 }
 
 button {
-    background-color: #faf3dd;
-    border: 0.1em solid #d1bfa3;
-    border-radius: 0.5em;
+    background: none;
+    border: none;
     padding: 0.6em 1.2em;
     font-size: 1em;
+    font-family: "Caveat Brush";
+    color: #2e24bd;
+    font-size: 2em;
 }
 
 button:hover {
-    background-color: #f0e3cc;
+    text-decoration: underline;
 }
 
 a{
     text-decoration: none;
     color: #2e24bd;
+}
+
+.cuaderno img {
+    width: 10em;
+    position: absolute;
+    top:0;
+    right: 45%;
 }
