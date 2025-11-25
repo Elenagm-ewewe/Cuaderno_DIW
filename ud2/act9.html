@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 7</title>
-    <link rel="stylesheet" href="act7.css">
+    <title>Filtros</title>
     <link rel="stylesheet" href="../header.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="act9.css">
+
 </head>
 <body>
+
 <header class="header">
     <nav>
         <ul class="menu-list">
-
-        <a href="../index.html"><h1>Diseño de Interfaces Web</h1></a>
-
+            <a href="../index.html"><h1>Diseño de Interfaces Web</h1></a>
             <li class="menu-item">
                 <a href="#" class="menu-link">Tema 1</a>
                 <ul class="submenu-list">
@@ -24,7 +23,6 @@
                     <li><a href="../ud1/act4.html" class="submenu-link">Actividad 4</a></li>
                 </ul>
             </li>
-
             <li class="menu-item">
                 <a href="#" class="menu-link">Tema 2</a>
                 <ul class="submenu-list">
@@ -36,49 +34,70 @@
                     <li><a href="act5.html" class="submenu-link">Actividad 5</a></li>
                     <li><a href="act6.html" class="submenu-link">Actividad 6</a></li>
                     <li><a href="act7.html" class="submenu-link">Actividad 7</a></li>
-                    <li><a href="act9.html" class="submenu-link">Actividad 9</a></li><li><a href="act8.html" class="submenu-link">Actividad 8</a></li>
+                    <li><a href="act8.html" class="submenu-link">Actividad 8</a></li>
+                    <li><a href="act9.html" class="submenu-link">Actividad 9</a></li>
+                    <li><a href="act10.html" class="submenu-link">Actividad 10</a></li>
                 </ul>
             </li>
-
             <li class="menu-item descripcion-item" id="descrip">
                 <a href="#" class="menu-link">Descripción ▼</a>
                     <div class="submenu-list descripcion-content"> 
                         <p>Transiciones.</p>
                     </div>
             </li>
+        </ul>
+    </nav>
+</header>
 
-            </ul>
-        </nav>
-    </header>
-    <main class="galeria">
+  <main>
 
-        <article class="tarjeta">
-            <div class="tarjeta-fondo"></div>
-            <div class="tarjeta-overlay">
-                <h2 class="tarjeta-titulo">El Valle</h2>
-            </div>
-            <div class="tarjeta-borde-animado"></div>
-            <p class="tarjeta-descripcion">Un lugar de paz y naturaleza.</p>
-        </article>
+    <h3>Filtros CSS</h3>
+    <p >Pasa el cursor sobre las imagenes para ver la foto original sin filtros</p>
 
-        <article class="tarjeta">
-            <div class="tarjeta-fondo"></div>
-            <div class="tarjeta-overlay">
-                <h2 class="tarjeta-titulo">Metrópolis</h2>
-            </div>
-            <div class="tarjeta-borde-animado"></div>
-            <p class="tarjeta-descripcion">Luces en la noche urbana.</p>
-        </article>
+    <div class="contenedor">
 
-        <article class="tarjeta">
-            <div class="tarjeta-fondo"></div>
-            <div class="tarjeta-overlay">
-                <h2 class="tarjeta-titulo">La Costa</h2>
-            </div>
-            <div class="tarjeta-borde-animado"></div>
-            <p class="tarjeta-descripcion">El sonido de las olas rompiendo.</p>
-        </article>
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="escalagrises">
+            <p>Grayscale</p>
+        </div>
 
-    </main>
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="blur">
+            <p>Blur</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="sepia">
+            <p>Sepia</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="saturate">
+            <p>Saturate</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="invert">
+            <p>Invert</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="darkcontrast">
+            <p>Dark and Contrast</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="huerotate">
+            <p>Hue Rotate</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/parque-nacional-banff.jpg" class="dropshadow">
+            <p>Drop Shadow</p>
+        </div>
+
+    </div>
+
+</main>
 </body>
 </html>

@@ -14,10 +14,10 @@
         }
 
         .header {
-            background: linear-gradient(90deg, rgb(13, 13, 122), rgb(117, 117, 136));
+            background: linear-gradient(90deg, rgb(35, 35, 202), rgb(202, 161, 248));
             color: white;
             padding: 0 20px;
-            box-shadow: 5px 5px 10px 5px rgba(18, 5, 75, 0.541);
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 2, 0.432);
         }
 
         .menu-list {
@@ -72,7 +72,7 @@
 
 
 .submenu-link:hover {
-    background-color: #057d8d;
+    background-color: rgb(35, 35, 202)
 }
 
 

@@ -1,0 +1,95 @@
+html, body { 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(17, 17, 17), rgb(10, 10, 10));
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+color: rgb(255, 132, 87);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 2em;
+margin-bottom: 0;
+}
+
+p{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1em; 
+    width: 100vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.tarjeta{
+    display: flex;
+    margin: 1.5em;
+    flex-direction: column;
+    padding: 1.5em;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+    border-radius: 30px;
+}
+
+img{
+    width: 20vw;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.escalagrises{
+    filter: grayscale();
+}
+
+.blur{
+    filter: blur(5px);
+}
+.sepia{
+    filter:sepia();
+}
+
+.saturate{
+    filter:saturate(5)
+}
+
+.invert{
+    filter: invert();
+}
+
+.darkcontrast{
+    filter: contrast(4);
+}
+
+.huerotate{
+    filter: hue-rotate(45deg);
+}
+
+.dropshadow{
+    filter:drop-shadow(2px 2px 15px red);
+}
+
+img:hover{
+    filter: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+}

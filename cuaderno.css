@@ -12,6 +12,12 @@ body {
     align-items: center;
 }
 
+h3{
+    font-family: "Caveat Brush";
+    font-size: 3em;
+    color: #2a3886;
+}
+
 .cuaderno {
     width: 80%;
     max-width: 60em;
@@ -30,7 +36,8 @@ header {
     margin-bottom: 2em;
 }
 
-header h1 {
+h1 {
+    margin-top: 0;
     font-size: 3em;
     margin-bottom: 0.5em;
     font-family: "Caveat Brush";
@@ -73,7 +80,7 @@ button {
     background: none;
     border: none;
     padding: 0.6em 1.2em;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: "Caveat Brush";
     color: #2e24bd;
     font-size: 2em;

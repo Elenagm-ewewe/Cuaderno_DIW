@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgb(20, 20, 20), rgb(80, 80, 80));
+}
+
+.cortinilla{
+    z-index: 40;
+}
+
+
+.img1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://picsum.photos/1920/1080?random=1');
+    transition:2s;
+    z-index: 20;
+}
+
+label{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    padding: 1em;
+    color: white;
+    background-color:rgb(6, 167, 118);
+    border-radius: 20px;
+    z-index: 200;
+    box-shadow:  5px 5px 10px 2px rgba(0, 0, 0, 0.342);
+    z-index: 150;
+}
+
+h2{
+    color: white;
+}
+
+input{
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+}
+
+
+label:hover{
+    background-color: rgb(12, 163, 105);
+    cursor: pointer;
+}
+
+#dale:checked ~ .img1{
+    transform: translateY(-800px);
+    opacity: 0;
+}
+
+#dale:checked ~ .botonaso{
+    opacity: 0;
+    display: none;
+}
+
+
+.cuerpo{
+    position: absolute;
+    top:4em;
+    right:20%;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 1s;
+}
+
+#dale:checked ~ .cuerpo{
+    opacity: 100%;
+}
+
+.img2{
+    background-image: url('https://picsum.photos/1920/1080?random=2');
+    image-resolution: inherit;
+    height: 60vh;
+    width: 60vw;
+}
