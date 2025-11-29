@@ -1,0 +1,32 @@
+.footer-cuaderno {
+    background: linear-gradient(to bottom, #03053f, #733ebd);
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 5px solid #f17df5e0;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-cuaderno .footer-contenido {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-cuaderno p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-cuaderno .linea {
+    border-bottom: 2px dashed white;
+    width: 60%;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+
+.footer-cuaderno .autoras {
+    font-size: 13px;
+    opacity: 0.9;
+}
