@@ -1,112 +1,145 @@
-
-        body {
-            margin: 0;
-            padding: 0 ;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        h2{
-            text-align: center;
-            padding: 10px;
-            margin: 0;
-            margin-right: 2em;
-        }
-
-        .header {
-            background: linear-gradient(90deg, rgb(35, 35, 202), rgb(202, 161, 248));
-            color: white;
-            padding: 0 20px;
-            box-shadow: 5px 5px 10px 5px rgba(0, 0, 2, 0.432);
-        }
-
-        .menu-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex; 
-        }
-
-        .menu-item {
-            position: relative;
-        }
-
-        .menu-link {
-            display: block;
-            padding: 15px 20px;
-            text-decoration: none;
-            color: white;
-            transition: background-color 0.3s;
-        }
-
-        .menu-link:hover {
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        .submenu-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            position: absolute; 
-            top: 100%; 
-            left: 0;
-            background-color: #444; 
-            min-width: 180px; 
-            z-index: 10; 
-            display: none;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-
-        .menu-item:hover .submenu-list {
-            display: block;
-        }
-
-        .submenu-link {
-            display: block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: white;
-            transition: background-color 0.3s;
-        }
-
-
-.submenu-link:hover {
-    background-color: rgb(35, 35, 202)
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
+h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-right: 2em;
+}
 
-.descripcion-item{
-    background-color: #241d64b6; 
+.header {
+    background: linear-gradient(90deg, #04474B, #17777c);
+    color: white;
+    padding: 0 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 2, 0.432);
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #ffffff;
+    
+    color: #E4981E
+}
+
+.submenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #04474b7c;
+    min-width: 180px;
+    z-index: 10;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .submenu-list {
+    display: block;
+}
+
+.submenu-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.submenu-link:hover {
+    background-color: #e4981e;
+}
+
+.descripcion-item {
+    background-color: #e4981e81;
     margin-left: auto;
     margin-right: 5em;
-    width: 420px;       
-    border-radius: 8px;    
+    width: 420px;
 }
 
 .descripcion-content {
-    padding: 15px; 
-    max-width: 400px; 
     white-space: normal;
     text-align: left;
+    width: 420px;
 }
 
 .descripcion-content p {
-    margin: 0;
+    margin: 1em;
     color: white;
+
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-a h1{
-    color: white;
+a h1 {
+    color: #E4981E;
     font-size: 1.4em;
-    margin-bottom: 0;
-    margin-right: 1em;
+    margin: 0.5em;
 }
 
-a h1:hover{
-    color: #71afb8;
+a h1:hover {
+    color: white
+}
+
+.footer-cuaderno {
+    background: linear-gradient(90deg, #04474B, #17777c);
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    font-family: "Segoe UI", sans-serif;
+    border-top: 5px solid #45c4ca;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-cuaderno .footer-contenido {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+strong{
+    color:#E4981E
+}
+
+.footer-cuaderno p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-cuaderno .linea {
+    border-bottom: 2px dashed white;
+    width: 60%;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+
+.footer-cuaderno .autoras {
+    font-size: 13px;
+    opacity: 0.9;
 }
