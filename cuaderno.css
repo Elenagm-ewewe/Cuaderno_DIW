@@ -21,7 +21,7 @@ h3{
 .cuaderno {
     width: 80%;
     max-width: 60em;
-    height: 90%;
+    height: 100%;
     margin: 3em auto;
     padding: 2em;
     background-color: #ffffff;
@@ -100,5 +100,5 @@ a{
     width: 5em;
     position: absolute;
     top:0;
-    right: 45%;
+    right: 80%;
 }
