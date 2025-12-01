@@ -1,4 +1,9 @@
 
+main{
+    margin: 0;
+    background-color: aqua;
+}
+
 .caja-fondo-claro {
     background-color:lightgrey;
     width: 100vw;
@@ -10,9 +15,10 @@
     background-color:dimgray;
     width: 100vw;
     height: 10vh;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: 1;
+    margin: 0;
 }
 
 .caja-blanca{

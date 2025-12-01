@@ -35,8 +35,9 @@ h2 {
     padding: 15px 20px;
     text-decoration: none;
     color: white;
-    transition: background-color 0.3s;
 }
+
+
 
 .menu-link:hover {
     background-color: #ffffff;
@@ -72,6 +73,10 @@ h2 {
 
 .submenu-link:hover {
     background-color: #e4981e;
+}
+
+#activo{
+    background-color:#04474B
 }
 
 .descripcion-item {

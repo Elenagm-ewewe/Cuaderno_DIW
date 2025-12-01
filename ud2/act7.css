@@ -5,6 +5,10 @@ body{
     
 }
 
+main{
+    height: 85vh;
+}
+
 .galeria{
     display: flex;
     flex-wrap: wrap;
