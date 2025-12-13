@@ -1,0 +1,6 @@
+div {
+    white-space: pre-line;   /*Esto es para que respete los saltos de línea*/
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 2%;
+}
