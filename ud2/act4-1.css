@@ -1,9 +1,11 @@
 
+main{
+    height: 180vh
+}
+
 /*-Parte 2--------------------------------------------------------------------------------------------*/
 .contenedor{
-    background-color: rgb(247, 0, 0);
-    width: 100%;
-    height: max-content
+    background-color: rgb(202, 116, 116);
 }
 
 
