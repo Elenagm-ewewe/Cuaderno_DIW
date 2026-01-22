@@ -1,0 +1,14 @@
+main{
+    width: 80vw;
+    background-color: #f0f8ff;
+    display:contents;
+
+}
+
+.gimp{
+    border-radius: 10px;
+    margin: 10px;
+    width: 450px;
+    height: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+}

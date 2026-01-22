@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementación de la accesibilidad en la web</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="act2.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
+
+                <a href="../index.html">
+                    <h1>Diseño de Interfaces Web</h1>
+                </a>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 1</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud1/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud1/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud1/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud1/act4.html" class="submenu-link">Actividad 4</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 2</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud2/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud2/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud2/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud2/act4.html" class="submenu-link">Actividad 4.1</a></li>
+                        <li><a href="../ud2/act4-1.html" class="submenu-link">Actividad 4.2</a></li>
+                        <li><a href="../ud2/act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="../ud2/act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="../ud2/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="../ud2/act8.html" class="submenu-link">Actividad 8</a></li>
+                        <li><a href="../ud2/act9.html" class="submenu-link">Actividad 9</a></li>
+                        <li>
+                            <a href="../ud2/act10.html" class="submenu-link">Actividad 10</a>
+                        </li>
+                        <li>
+                            <a href="../ud2/act11.html" class="submenu-link">Actividad 11</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 3</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud3/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud3/act2.html" class="submenu-link" >Actividad 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 4</a>
+                    <ul class="submenu-list">
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link" id="activo">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item descripcion-item" id="descrip">
+                    <a href="#" class="menu-link">Descripción ▼</a>
+                    <div class="submenu-list descripcion-content">
+                        <p class="enunciado"></p>
+                        <p class="respuesta">Implementación de la accesibilidad en la web</p>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+
+<main>
+
+
+    <canvas id="ej1"  width="500" height="300"></canvas>
+
+    <canvas id="ej2"  width="500" height="300"></canvas>
+
+    <canvas id="ej3"  width="500" height="300"></canvas>
+
+    <canvas id="ej4"  width="500" height="300"></canvas>
+
+    <canvas id="ej5"  width="500" height="300"></canvas>
+
+    <canvas id="ej6"  width="500" height="300"></canvas>
+
+    <canvas id="ej7"  width="500" height="300" style="background-color: black;"></canvas>
+
+</main>
+
+        <footer class="footer-cuaderno">
+        <div class="footer-contenido">
+            <strong>Cuaderno de Actividades</strong>
+            <p class="linea"></p>
+            <p class="autoras">Verónica Martínez Serrano y Elena Gutiérrez Morata</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+  //Figura 1
+    var ej1 = document.getElementById("ej1");
+    var dibujo = ej1.getContext("2d");
+
+dibujo.beginPath();
+    dibujo.moveTo(0,0);
+    dibujo.lineTo(250, 300);
+    dibujo.moveTo(250, 300);
+    dibujo.lineTo(500, 0);
+    dibujo.lineWidth=2;
+    dibujo.strokeStyle = "#CC0000";
+    dibujo.stroke();
+
+//--------------------------------------------------------------------------------------------------
+
+    //Figura 2
+
+    var ej2 = document.getElementById("ej2");
+    var dibujo2 = ej2.getContext("2d");
+
+    dibujo2.beginPath();
+    dibujo2.rect(50, 10,200,100)
+    dibujo2.lineWidth=2;
+    dibujo2.strokeStyle = "rgb(57, 127, 255)";
+    dibujo2.stroke();
+
+//--------------------------------------------------------------------------------------------------
+
+    //Figura 3
+
+    var ej3 = document.getElementById("ej3");
+    var dibujo3 = ej3.getContext("2d");
+
+    dibujo3.beginPath();
+    dibujo3.moveTo(20, 0)
+    dibujo3.lineTo(20, 300)
+    dibujo3.lineWidth=8;
+    dibujo3.strokeStyle = "#CC0000";
+    dibujo3.stroke();
+
+    dibujo3.beginPath();
+    dibujo3.moveTo(40, 0)
+    dibujo3.lineTo(40, 300)
+    dibujo3.moveTo(60, 0)
+    dibujo3.lineTo(60, 300)
+    dibujo3.moveTo(80, 0)
+    dibujo3.lineTo(80, 300)
+    dibujo3.lineWidth=8;
+    dibujo3.strokeStyle = "rgb(16, 197, 16)";
+    dibujo3.stroke();
+
+    dibujo3.beginPath();
+    dibujo3.moveTo(140, 0)
+    dibujo3.lineTo(100, 100)
+    dibujo3.moveTo(140, 0)
+    dibujo3.lineTo(180, 100)
+
+    dibujo3.moveTo(140, 100)
+    dibujo3.lineTo(100, 200)
+    dibujo3.moveTo(140, 100)
+    dibujo3.lineTo(180, 200)
+
+    dibujo3.moveTo(140, 200)
+    dibujo3.lineTo(100, 300)
+    dibujo3.moveTo(140, 200)
+    dibujo3.lineTo(180, 300)
+
+    dibujo3.lineWidth=8;
+    dibujo3.strokeStyle = "blue";
+    dibujo3.stroke();
+
+
+//--------------------------------------------------------------------------------------------------
+    //Figura 4
+
+    var ej4 = document.getElementById("ej4");
+    var dibujo4 = ej4.getContext("2d");
+
+    dibujo4.fillStyle= "red"
+    dibujo4.beginPath()
+    dibujo4.fillRect(100, 50, 300,200)
+    dibujo4.stroke()
+
+
+//--------------------------------------------------------------------------------------------------
+
+    //Figura 5
+
+    var ej5 = document.getElementById("ej5");
+    var dibujo5 = ej5.getContext("2d");
+
+    dibujo5.fillStyle= "red"
+    dibujo5.beginPath()
+    dibujo5.fillRect(100, 0, 300,300)
+    dibujo5.stroke()
+
+    dibujo5.clearRect(110, 10, 10 ,10)
+    dibujo5.clearRect(250, 145, 10 ,10)
+    dibujo5.clearRect(380, 280, 10 ,10)
+
+
+
+</script>
