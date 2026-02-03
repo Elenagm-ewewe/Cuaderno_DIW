@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo guiado canvas</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
+
+                <a href="../index.html">
+                    <h1>Diseño de Interfaces Web</h1>
+                </a>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 1</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud1/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud1/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud1/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud1/act4.html" class="submenu-link">Actividad 4</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 2</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud2/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud2/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud2/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud2/act4.html" class="submenu-link">Actividad 4.1</a></li>
+                        <li><a href="../ud2/act4-1.html" class="submenu-link">Actividad 4.2</a></li>
+                        <li><a href="../ud2/act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="../ud2/act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="../ud2/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="../ud2/act8.html" class="submenu-link">Actividad 8</a></li>
+                        <li><a href="../ud2/act9.html" class="submenu-link">Actividad 9</a></li>
+                        <li>
+                            <a href="../ud2/act10.html" class="submenu-link">Actividad 10</a>
+                        </li>
+                        <li>
+                            <a href="../ud2/act11.html" class="submenu-link">Actividad 11</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 3</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud3/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud3/act2.html" class="submenu-link" >Actividad 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 4</a>
+                    <ul class="submenu-list">
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="actExtra.html" class="submenu-link" id="activo">Actividad extra</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 5</a>
+                    <ul class="submenu-list">
+                        
+                    </ul>
+                </li>
+
+                <li class="menu-item descripcion-item" id="descrip">
+                    <a href="#" class="menu-link">Descripción ▼</a>
+                    <div class="submenu-list descripcion-content">
+                        <p class="enunciado"></p>
+                        <p class="respuesta">Actividad guiada con canvas.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <canvas id="lienzo" width="500" height="300"></canvas>
+    <script type="text/javascript">
+        var hoja = document.getElementById("lienzo");
+        var lienzo = hoja.getContext("2d");
+
+        //Esto para el cielo
+        lienzo.fillStyle="#B5CDFF";
+        lienzo.fillRect(0,0,500,300);
+
+        //Sol
+        lienzo.fillStyle="#F8FF5A";
+        lienzo.beginPath();
+        lienzo.arc(290,130,54,0,Math.PI*2,true);
+        lienzo.closePath;
+        lienzo.fill();
+
+        //Nubes
+        lienzo.fillStyle="rgba(232,236,247,0.5)";
+        lienzo.beginPath();
+        lienzo.arc(10,200,80,0,Math.PI*2, true);
+        lienzo.arc(88,220,46,0,Math.PI*2, true);
+        lienzo.arc(154,199,30,0,Math.PI*2, true);
+        lienzo.arc(232,210,62,0,Math.PI*2, true);
+        lienzo.arc(320,205,25,0,Math.PI*2, true);
+        lienzo.arc(380,200,44,0,Math.PI*2, true);
+        lienzo.arc(442,208,23,0,Math.PI*2, true);
+        lienzo.arc(498,200,41,0,Math.PI*2, true);
+        lienzo.closePath;
+        lienzo.fill();
+
+        //Mar
+        var gr=lienzo.createLinearGradient(0,200,0,280);
+        gr.addColorStop(0,"#D3DEF3");
+        gr.addColorStop(1,"#0628A4");
+        lienzo.fillStyle=gr;
+        lienzo.fillRect(0,200,500,300);
+
+        //Casco del barco
+        lienzo.beginPath();
+        lienzo.fillStyle="#656652";
+        lienzo.strokeStyle="#3C3F09"
+        lienzo.moveTo(300,219);
+        lienzo.lineTo(360,219);
+        lienzo.lineTo(368,203);
+        lienzo.lineTo(296,206);
+        lienzo.lineTo(300,219);
+        lienzo.closePath;
+        lienzo.stroke();
+        lienzo.fill();
+
+        //Quilla del barco
+        lienzo.beginPath();
+        lienzo.fillStyle="#3C3F09";
+        lienzo.beginPath();
+        lienzo.moveTo(300,219);
+        lienzo.lineTo(360,219);
+        lienzo.lineTo(364,212);
+        lienzo.lineTo(298,214);
+        lienzo.lineTo(300,219);
+        lienzo.fill();
+
+        //Mástil
+        lienzo.fillStyle="#867048";
+        lienzo.beginPath();
+        lienzo.moveTo(314,205);
+        lienzo.lineTo(330,101);
+        lienzo.lineTo(334,103);
+        lienzo.lineTo(322,204);
+        lienzo.fill();
+
+        //Vela
+        lienzo.fillStyle="rgba(210,151,50,0.6)";
+        lienzo.beginPath();
+        lienzo.moveTo(333,105);
+        lienzo.lineTo(378,194);
+        lienzo.lineTo(322,188);
+        lienzo.lineTo(333,105);
+        lienzo.closePath;
+        lienzo.fill();
+
+        //Isla
+        lienzo.fillStyle="#2E7B10";
+        lienzo.beginPath();
+        lienzo.arc(100,250,45,-0.3,Math.PI*1.1, true);
+        lienzo.arc(135,246,33,-0.3,Math.PI*1.1, true);
+        lienzo.closePath;
+        lienzo.fill();
+
+        //Hago unos cuantos rayos de sol
+        lienzo.strokeStyle = "#F8FF5A";
+        lienzo.lineWidth = 3;
+
+        //Primer rayo que hago
+        lienzo.beginPath();
+        lienzo.moveTo(235, 75);
+        lienzo.lineTo(255, 100);
+        lienzo.stroke();
+
+        //Segundo rayo
+        lienzo.beginPath();
+        lienzo.moveTo(290, 60);
+        lienzo.lineTo(290, 95);
+        lienzo.stroke();
+
+        //Tercer rayo
+        lienzo.beginPath();
+        lienzo.moveTo(345, 75);
+        lienzo.lineTo(325, 100);
+        lienzo.stroke();
+
+        //Pájaros de color negro que sean 2 arcos
+        lienzo.strokeStyle = "#000";
+        lienzo.lineWidth = 2;
+
+        //Pájaro 1
+        lienzo.beginPath();
+        lienzo.arc(150, 90, 10, Math.PI, 0);
+        lienzo.arc(170, 90, 10, Math.PI, 0);
+        lienzo.stroke();
+
+        //Pájaro 2
+        lienzo.beginPath();
+        lienzo.arc(210, 50, 10, Math.PI, 0);
+        lienzo.arc(230, 50, 10, Math.PI, 0);
+        lienzo.stroke();
+
+    </script>
+
+    <footer class="footer-cuaderno">
+        <div class="footer-contenido">
+            <strong>Cuaderno de Actividades</strong>
+            <p class="linea"></p>
+            <p class="autoras">
+                Verónica Martínez Serrano y Elena Gutiérrez Morata
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
