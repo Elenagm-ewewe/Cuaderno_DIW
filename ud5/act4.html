@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Ejercicio</title>
+    <link href="output4.css" rel="stylesheet">
+        <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body class="bg-gray-200">
+
+
+     <header class="header" style="margin-bottom: 20px;">
+        <nav>
+            <ul class="menu-list">
+
+                <a href="../index.html">
+                    <h1>Diseño de Interfaces Web</h1>
+                </a>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 1</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud1/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud1/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud1/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud1/act4.html" class="submenu-link">Actividad 4</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 2</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud2/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud2/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud2/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud2/act4.html" class="submenu-link">Actividad 4.1</a></li>
+                        <li><a href="../ud2/act4-1.html" class="submenu-link">Actividad 4.2</a></li>
+                        <li><a href="../ud2/act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="../ud2/act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="../ud2/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="../ud2/act8.html" class="submenu-link">Actividad 8</a></li>
+                        <li><a href="../ud2/act9.html" class="submenu-link">Actividad 9</a></li>
+                        <li>
+                            <a href="../ud2/act10.html" class="submenu-link">Actividad 10</a>
+                        </li>
+                        <li>
+                            <a href="../ud2/act11.html" class="submenu-link">Actividad 11</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 3</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud3/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud3/act2.html" class="submenu-link">Actividad 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 4</a>
+                    <ul class="submenu-list">
+                        <li><a href="../ud4/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud4/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud4/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud4/actExtra.html" class="submenu-link">Actividad extra</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Tema 5</a>
+                    <ul class="submenu-list">
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="act4.html" class="submenu-link" id="activo">Actividad 4</a></li>
+                        <li><a href="act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="act7.html" class="submenu-link">Actividad 7</a></li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item descripcion-item" id="descrip">
+                    <a href="#" class="menu-link">Descripción ▼</a>
+                    <div class="submenu-list descripcion-content">
+                        <p class="enunciado"></p>
+                        <p class="respuesta">Actividades de GIMP.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="p-8">
+
+        <div class="bg-white shadow-lg rounded-2xl p-5 flex flex-row justify-between text-2xl mb-5">
+            <div class="flex flex-row items-center">
+                <div class="bg-purple-700 h-12 w-12 rounded-2xl"></div>
+                <span class="text-gray-900 text- font-bold ml-3">Panel</span>
+            </div>
+            <div class="bg-gray-300 rounded-full h-12 w-12"></div>
+        </div>
+
+        <div class="flex flex-row gap-7">
+
+            <div class="bg-white shadow-lg rounded-2xl p-5 gap-4 flex flex-col">
+                <div class="bg-red-700 h-12 w-12 rounded-2xl"></div>
+                <div class="bg-green-700 h-12 w-12 rounded-2xl"></div>
+            </div>
+
+            <div class="flex flex-col gap-7 rounded-2xl w-full">
+
+                <div class="flex flex-row gap-7 ">
+                    <div  class="bg-blue-500 rounded-2xl p-7 text-white shadow-lg w-full">
+                        <p class="text-2xl font-thin">Ventas</p>
+                        <p class="font-bold text-4xl">10000€</p>
+                    </div>
+                    <div class="bg-emerald-600 rounded-2xl p-7 text-white shadow-lg w-full">
+                        <p class="text-2xl font-thin">Usuarios</p>
+                        <p class="font-bold text-4xl">100</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-9 shadow-lg border-dotted border-5 border-gray-400 h-full">
+                    <h3 class="font-bold text-gray-800 text-2xl">Ventas por mes</h3>
+                    <div class="flex flex-row items-end justify-center gap-1.5">
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-blue-500 to-blue-400 rounded-2xl w-24 h-44"></div>
+                            <p class="text-gray-800 font-bold text-lg">Enero</p>
+                        </div>
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-blue-600 to-blue-500 rounded-2xl w-24 h-62"></div>
+                            <p class="text-gray-800 font-bold text-lg">Febrero</p>
+                        </div>
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-indigo-500 to-indigo-400 rounded-2xl w-24 h-32"></div>
+                            <p class="text-gray-800 font-bold text-lg">Marzo</p>
+                        </div>
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-indigo-600 to-indigo-500 rounded-2xl w-24 h-82"></div>
+                            <p class="text-gray-800 font-bold text-lg">Abril</p>
+                        </div>
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-purple-500 to-purple-400 rounded-2xl w-24 h-56"></div>
+                            <p class="text-gray-800 font-bold text-lg">Mayo</p>
+                        </div>
+                        <div class="flex flex-col p-3 items-center">
+                            <div class="bg-linear-to-t from-purple-600 to-purple-500 rounded-2xl w-24 h-70"></div>
+                            <p class="text-gray-800 font-bold text-lg">Junio</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer-cuaderno">
+        <div class="footer-contenido">
+            <strong>Cuaderno de Actividades</strong>
+            <p class="linea"></p>
+            <p class="autoras">Verónica Martínez Serrano y Elena Gutiérrez Morata</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

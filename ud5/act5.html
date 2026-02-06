@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIMP</title>
+    <title>Grid con Tailwind</title>
+    <link rel="stylesheet" href="./output5.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="act1.css">
 </head>
-
-<body>
+<body class="flex flex-col gap-16 bg-gray-200 p-6">
 
     <header class="header">
         <nav>
@@ -63,23 +61,23 @@
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 4</a>
                     <ul class="submenu-list">
-                        <li><a href="act1.html" class="submenu-link" id="activo">Actividad 1</a></li>
-                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="actExtra.html" class="submenu-link">Actividad extra</a></li>
+                        <li><a href="../ud4/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud4/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud4/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud4/actExtra.html" class="submenu-link">Actividad extra</a></li>
                     </ul>
                 </li>
 
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 5</a>
                     <ul class="submenu-list">
-                        <li><a href="../ud5/act1.html" class="submenu-link">Actividad 1</a></li>
-                        <li><a href="../ud5/act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="../ud5/act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="../ud5/act4.html" class="submenu-link">Actividad 4</a></li>
-                        <li><a href="../ud5/act5.html" class="submenu-link">Actividad 5</a></li>
-                        <li><a href="../ud5/act6.html" class="submenu-link">Actividad 6</a></li>
-                        <li><a href="../ud5/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="act4.html" class="submenu-link" >Actividad 4</a></li>
+                        <li><a href="act5.html" class="submenu-link" id="activo">Actividad 5</a></li>
+                        <li><a href="act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="act7.html" class="submenu-link">Actividad 7</a></li>
                     </ul>
                 </li>
                 
@@ -95,26 +93,35 @@
         </nav>
     </header>
 
-<main>
-<img class="gimp" src="img/Ej1.gif" >
+    <main style="padding: 30px;">
 
-<img class="gimp" src="img/Ej2.jpg">
 
-<img class="gimp" src="img/Ej3.png" >
+<div class="grid grid-cols-4 gap-3 p-4 text-2xl">
+    <div class="h-28 bg-linear-to-r from-blue-600 to-blue-700 text-white p-4 col-span-4 rounded flex justify-center items-center" >Header</div>
+    <div class="h-52 bg-linear-to-r from-violet-500 to-violet-400 text-white p-4 rounded flex justify-center items-center">Sidebar</div>
+    <div class="bg-linear-to-r from-gray-400 to-gray-500 text-white p-4 col-span-3 rounded flex justify-center items-center" >Main Content</div>
+    <div class=" h-28 bg-linear-to-r from-blue-900 to-blue-800 text-white p-4 col-span-4 rounded flex justify-center items-center">Footer</div>
+</div>
 
-<img class="gimp" src="img/Ej4.png" >
 
-<img class="gimp" src="img/Ej5.png">
+<div class="grid grid-cols-3 gap-3 p-4 text-2xl">
 
-<img class="gimp" src="img/Ej6.png" >
+    <div class="text-white h-52 bg-linear-to-r from-orange-500 to-orange-400 col-span-2 rounded flex justify-center items-center">Destascado</div>
+    <div class="text-shadow-orange-950 bg-orange-300 rounded flex justify-center items-center">Vertical</div>
+    <div class="text-white h-52 bg-linear-to-r from-orange-700 to-orange-600 col-span-3 rounded flex justify-center items-center">Base</div>
+
+</div>
 
 </main>
-        <footer class="footer-cuaderno">
+
+
+    <footer class="footer-cuaderno">
         <div class="footer-contenido">
             <strong>Cuaderno de Actividades</strong>
             <p class="linea"></p>
             <p class="autoras">Verónica Martínez Serrano y Elena Gutiérrez Morata</p>
         </div>
     </footer>
+    
 </body>
 </html>

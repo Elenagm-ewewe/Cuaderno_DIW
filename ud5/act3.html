@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIMP</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output3.css" rel="stylesheet" />
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="act1.css">
-</head>
+    <title>Diseño Vistoso con Tailwind</title>
+  </head>
+  <body class="bg-gray-200">
 
-<body>
-
-    <header class="header">
+ <header class="header" style="margin-bottom: 20px;">
         <nav>
             <ul class="menu-list">
 
@@ -63,23 +61,23 @@
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 4</a>
                     <ul class="submenu-list">
-                        <li><a href="act1.html" class="submenu-link" id="activo">Actividad 1</a></li>
-                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="actExtra.html" class="submenu-link">Actividad extra</a></li>
+                        <li><a href="../ud4/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud4/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud4/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud4/actExtra.html" class="submenu-link">Actividad extra</a></li>
                     </ul>
                 </li>
 
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 5</a>
                     <ul class="submenu-list">
-                        <li><a href="../ud5/act1.html" class="submenu-link">Actividad 1</a></li>
-                        <li><a href="../ud5/act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="../ud5/act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="../ud5/act4.html" class="submenu-link">Actividad 4</a></li>
-                        <li><a href="../ud5/act5.html" class="submenu-link">Actividad 5</a></li>
-                        <li><a href="../ud5/act6.html" class="submenu-link">Actividad 6</a></li>
-                        <li><a href="../ud5/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link" id="activo">Actividad 3</a></li>
+                        <li><a href="act4.html" class="submenu-link">Actividad 4</a></li>
+                        <li><a href="act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="act7.html" class="submenu-link">Actividad 7</a></li>
                     </ul>
                 </li>
                 
@@ -95,26 +93,40 @@
         </nav>
     </header>
 
-<main>
-<img class="gimp" src="img/Ej1.gif" >
+    <main style="padding: 30px; height: 80vh;">
 
-<img class="gimp" src="img/Ej2.jpg">
 
-<img class="gimp" src="img/Ej3.png" >
+    <div class="m-10 p-7 bg-white shadow-2xl w-100 rounded-3xl">
 
-<img class="gimp" src="img/Ej4.png" >
+      <div class="w-20 h-20 rounded-full shadow bg-blue-100 mb-5"></div>
 
-<img class="gimp" src="img/Ej5.png">
+      <p class="text-4xl font-bold text-gray-800 mb-0.5">
+        Alex Design
+      </p>
 
-<img class="gimp" src="img/Ej6.png" >
+      <p class="font-bold uppercase text-blue-500 mb-2">
+        UI/UX Designer
+      </p>
 
-</main>
-        <footer class="footer-cuaderno">
+      <p class="text-gray-600 font-thin mt-5">
+        Especialista en crear interfaces limpias y modernas usando Tailwind CSS
+      </p>
+
+      <button class="mt-6 w-full p-4 bg-gray-100 text-gray-900 mb-0.5 rounded-full hover:bg-blue-600 hover:text-white">
+        Seguir perfil
+      </button>
+    </div>
+
+    </main>
+
+      <footer class="footer-cuaderno">
         <div class="footer-contenido">
             <strong>Cuaderno de Actividades</strong>
             <p class="linea"></p>
             <p class="autoras">Verónica Martínez Serrano y Elena Gutiérrez Morata</p>
         </div>
     </footer>
-</body>
+    
+  </body>
 </html>
+

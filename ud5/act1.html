@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIMP</title>
-    <link rel="stylesheet" href="../header.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output1.css" rel="stylesheet" />
+      <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="act1.css">
+  <title>Práctica 1 . Tailwind</title>
 </head>
 
-<body>
+<body class="p-10 w-full bg-gray-100 ">
 
-    <header class="header">
+    <header class="header" style="margin-bottom: 20px;">
         <nav>
             <ul class="menu-list">
 
@@ -63,23 +63,23 @@
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 4</a>
                     <ul class="submenu-list">
-                        <li><a href="act1.html" class="submenu-link" id="activo">Actividad 1</a></li>
-                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="actExtra.html" class="submenu-link">Actividad extra</a></li>
+                        <li><a href="../ud4/act1.html" class="submenu-link">Actividad 1</a></li>
+                        <li><a href="../ud4/act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="../ud4/act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="../ud4/actExtra.html" class="submenu-link">Actividad extra</a></li>
                     </ul>
                 </li>
 
                 <li class="menu-item">
                     <a href="#" class="menu-link">Tema 5</a>
                     <ul class="submenu-list">
-                        <li><a href="../ud5/act1.html" class="submenu-link">Actividad 1</a></li>
-                        <li><a href="../ud5/act2.html" class="submenu-link">Actividad 2</a></li>
-                        <li><a href="../ud5/act3.html" class="submenu-link">Actividad 3</a></li>
-                        <li><a href="../ud5/act4.html" class="submenu-link">Actividad 4</a></li>
-                        <li><a href="../ud5/act5.html" class="submenu-link">Actividad 5</a></li>
-                        <li><a href="../ud5/act6.html" class="submenu-link">Actividad 6</a></li>
-                        <li><a href="../ud5/act7.html" class="submenu-link">Actividad 7</a></li>
+                        <li><a href="act1.html" class="submenu-link" id="activo">Actividad 1</a></li>
+                        <li><a href="act2.html" class="submenu-link">Actividad 2</a></li>
+                        <li><a href="act3.html" class="submenu-link">Actividad 3</a></li>
+                        <li><a href="act4.html" class="submenu-link">Actividad 4</a></li>
+                        <li><a href="act5.html" class="submenu-link">Actividad 5</a></li>
+                        <li><a href="act6.html" class="submenu-link">Actividad 6</a></li>
+                        <li><a href="act7.html" class="submenu-link">Actividad 7</a></li>
                     </ul>
                 </li>
                 
@@ -95,26 +95,40 @@
         </nav>
     </header>
 
-<main>
-<img class="gimp" src="img/Ej1.gif" >
+    <main style="padding: 30px; height: 80vh;">
 
-<img class="gimp" src="img/Ej2.jpg">
+  <div class="p-6 rounded-lg  bg-slate-800 w-full justify-center text-white text-center cursor-pointer mb-5 hover:bg-slate-900">
+    <h1 class="text-2xl font-bold">MI PRIMER DASHBOARD VISUAL</h1>
+  </div>
 
-<img class="gimp" src="img/Ej3.png" >
+  <div class="flex gap-5 w-full justify-center">
+    <button class="p-4 rounded-full text-white font-bold w-1/2 bg-red-500/50 active:bg-red-500/100" >
+      BOTÓN DE PÁNICO
+    </button>
 
-<img class="gimp" src="img/Ej4.png" >
+    <div class="p-4 rounded-lg text-white w-1/2 text-center bg-[#4F46E5]">
+      ZONA VIP (HEX)
+    </div>
+  </div>
 
-<img class="gimp" src="img/Ej5.png">
+  <div class="h-60 rounded-xl my-5 flex items-center justify-center text-white text-3xl font-black w-full bg-[url('360_F_495286577_rpsT2Shmr6g81hOhGXALhxWOfx1vOQBa.jpg')] bg-cover bg-center">
+    BANNER CON IMAGEN
+  </div>
 
-<img class="gimp" src="img/Ej6.png" >
+  <div class="h-32 rounded-xl flex items-center justify-center text-white font-bold w-full bg-linear-to-r from-blue-500 to-green-500">
+    DEGRADADO AZUL A VERDE
+  </div>
 
-</main>
-        <footer class="footer-cuaderno">
+  </main>
+
+          <footer class="footer-cuaderno">
         <div class="footer-contenido">
             <strong>Cuaderno de Actividades</strong>
             <p class="linea"></p>
             <p class="autoras">Verónica Martínez Serrano y Elena Gutiérrez Morata</p>
         </div>
     </footer>
+
 </body>
+
 </html>
