@@ -1,0 +1,19 @@
+.descarga{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 30px;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.descarga:hover {
+    background: linear-gradient(to right, #4caf89, #45a085);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
